@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Cheat Sheet</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <style type="text/css">
+      h2 {
+        color: purple;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="container">
+      <h1>CSS Information</h1>
+      <div class="box_1">
+        <h2>Three methods for adding CSS</h2>
+        <p>Inspect this page to see examples</p>
+        <ul>
+          <li style="color: red">
+            <b>Inline CSS:</b> Directly in the html element. (Do not do this)
+          </li>
+          <li>
+            <b>Internal CSS:</b> Using &lt;style&gt; tags within a single
+            document.
+          </li>
+          <li>
+            <b>External CSS:</b> Linking an external .css file. (Best practice)
+          </li>
+        </ul>
+      </div>
+      <div class="box_2">
+        <h2>Colors in CSS</h2>
+        <p>Can be denoted a number of different ways</p>
+        <ul>
+          <li><b>Color names</b> color: red;</li>
+          <li><b>HTML5 color names</b> color: blue;</li>
+          <li><b>Hexadecimal code:</b> color: #00ff00;</li>
+          <li><b>RGB</b> color: rgb(0,0,255);</li>
+        </ul>
+      </div>
+      <div>
+        <h2>ID vs Class</h2>
+        <p>
+          Different elements can be given an id or a class to apply styling to
+          from the css file. An id should only be given to a single element
+          while classes can be used by multiple elements to apply the same
+          styling.
+        </p>
+      </div>
+      <div class="box_model">
+        <h2>Box model</h2>
+        <p>The box model is made up of four sections</p>
+        <ul>
+          <li>
+            <a href="#">Content: </a>Made up from what your content actuially
+            is.
+          </li>
+          <li>
+            <a href="#">Padding: </a>The space between the content element & its
+            border.
+          </li>
+          <li>
+            <a href="#">Border:</a> Not always used but can be set to give
+            further spacing
+          </li>
+          <li>
+            <a href="#">Margin: </a>The space between the border and the
+            adjacent elements
+          </li>
+        </ul>
+        <p>
+          Padding, border and margins all have a left, right, top and bottom
+          parameter which can be altered
+        </p>
+        <p><b>Applying margin and padding</b></p>
+        <p>
+          When applying margin and padding widths they can be written in long
+          hand or short hand an example oif each can be found below.
+        </p>
+        <p><b>Long Hand</b></p>
+        <p>p{</p>
+        <p class="text_right">margin-top: 5px;</p>
+        <p class="text_right">margin-right: 10px;</p>
+        <p class="text_right">margin-bottom: 5px;</p>
+        <p class="text_right">margin-left: 10px;</p>
+        <p>}</p>
+        <p><b>Short Hand</b></p>
+        <p>p{</p>
+        <p class="text_right">(margin: TOP RIGHT BOTTOM LEFT;)</p>
+        <p class="text_right">margin: 5px 10px 5px 10px;</p>
+        <p>}</p>
+      </div>
+      <form class="my_form">
+        <div class="form_group">
+          <label>Name:</label>
+          <input type="text" name="name" />
+        </div>
+        <div class="form_group">
+          <label>Email:</label>
+          <input type="text" name="email" />
+        </div>
+        <div class="form_group">
+          <label>Message:</label>
+          <textarea name="message"></textarea>
+        </div>
+        <input class="button" type="submit" value="Submit" name="" />
+      </form>
+
+      <div class="block">
+        <h2>Alignment & floating</h2>
+        <p>
+          to place blocks of text or other elements next to each other we can
+          use a variety of commands. inspect these elements to see an example of
+          what can be done.
+        </p>
+      </div>
+      <div class="block">
+        <h2>Alignment & floating</h2>
+        <p>
+          Using float we can display elements next to each other. since we are
+          using three we set the width of each to one third of the total width
+          or 33.3%
+        </p>
+      </div>
+      <div class="block">
+        <h2>Alignment & floating</h2>
+        <p>
+          Padding and borders will affect the overall width, to overcome this
+          set box sizing to "border box" this will mean the borders max size is
+          33.3% or what ever value you have set
+        </p>
+      </div>
+      <!--after using a float use the clear both command to clear the formatting -->
+      <div class="clr"></div>
+      <div id="side_bar">
+        <h2>Side bar</h2>
+        <ul>
+          <li><a href="#">Home</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Data</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Information</a></li>
+        </ul>
+      </div>
+      <div id="main_block">
+        <h2>Main block</h2>
+        <p>
+          Another way to use floats is to create and main block and side bar.
+          dont much in the same way the widths are not set to the same values
+          allowing elements to take up different amounts of the screen
+        </p>
+      </div>
+      <div class="clr"></div>
+      <div class="positioning_block">
+        <h2>Positioning in CSS</h2>
+        <p>Typed of positioning</p>
+        <ul>
+          <li>
+            <b>Static: </b>If not stated static is default and will render
+            elements in order of the document.
+          </li>
+          <li>
+            <b>Relative: </b>relative will shift the element relative to its
+            normal position, by using commands like top, left etc.
+          </li>
+          <li>
+            <b>Absolute: </b>Allows positional targeting of an element within a
+            relative structure
+          </li>
+          <li>
+            <b>Fixed: </b>will create a persistant element on the browser
+            regardless of where we scroll, often used for nav bars
+          </li>
+          <li><b>Initial: </b>Sets the property to its default value</li>
+          <li>
+            <b>Inherit: </b>will inherit what ever properties belong to the
+            parent element
+          </li>
+        </ul>
+        <div class="p_box">
+          <h2>Examples</h2>
+          <h3>Relative/absolute</h3>
+          <p>
+            this box has some example of the different positioning options
+            available to us.
+          </p>
+          <p>
+            by using absolute and relative positioning can shift the h3 relative
+            to the postion of p_box rather than the entire page
+          </p>
+        </div>
+      </div>
+      <div class="psuedo_example">
+        <ul>
+          <li>Psuedo classes first child</li>
+          <li>nth child() can be used also</li>
+          <li>Odds and evens can be used to target </li>
+          <li>Psuedo classes fourth child</li>
+        </ul>
+      </div>
+    </section>
+    <!--End of container-->
+    <a class="fixed_position button" href="#">Fixed example</a>
+    <div style="margin-top: 700px">
+      <p>this div shifts the page up to make it more user friendly</p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+/*Global styles to all links*/
+a{
+    text-decoration: none;
+    font-weight: 600;
+    color: black;   
+}
+a:hover{
+    color: red;
+
+}
+a:active{
+    color: green;
+
+}
+
+.button{
+    background-color: #101820;
+    color: darkgrey;
+    padding: 10px 15px;
+    border: none;
+
+}
+.fixed_position {
+    position: fixed;
+    top: 300px;
+}
+
+.clr{
+    clear: both;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.4em;
+  margin: 0;
+  /*Same as above
+    font: normal 16px Arial, Helvetica, sans-serif;*/
+}
+
+
+.container {
+    width: 75%;
+  margin: auto;
+}
+
+.container h1{
+    text-align: center;
+    font-family: Tahoma;
+    font-weight: 800;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: capitalize;
+    padding-bottom: 5px;
+    letter-spacing: 0.1em;
+
+}
+    
+
+
+.text_right {
+    position: relative;
+    left: 25px;
+}
+
+.box_1 {
+  background-color: #101820;
+  border: 5px #fee715 solid;
+  color: #fff;
+  padding: 20px;
+  margin-left: 20px;
+  
+
+}
+.box_2 {
+  background-color: black;
+  border: 3px lightgray dotted;
+  color: #fff;
+  padding: 20px;
+  margin: 20px 0;
+  
+
+}
+.box_model{
+    border: 1px lightgray solid;
+    padding: 20px;
+    border-radius: 15px;
+
+}
+.box_model ul{
+    list-style-type: none;
+
+}
+.box_model li{
+    padding-bottom: 6px;
+    border-bottom:dotted 1px #333;
+    list-style-image: url('../images/bull.png');
+
+}
+
+.my_form{
+    padding: 20px;
+
+}
+.my_form .form_group{
+    padding-bottom: 10px;
+
+}
+.my_form input[type='text'], .my_form textarea{
+    padding: 8px;
+    width: 100%;
+
+}
+
+.my_form label{
+    display: block;
+}
+
+.block{
+    float: left;
+    width: 33.3%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+.block h2{
+    padding-bottom: 5px;
+}
+
+#side_bar {
+    float: left;
+    width: 20%;
+    background-color: #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+#side_bar ul{
+    list-style-type: none;
+}
+
+#main_block{
+    float: right;
+    width: 80%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.positioning_block {
+    padding: 5px 0px;
+}
+.p_box {
+    width: 800px;
+    height: 500px;
+    border: 1px solid black;
+    margin-top: 20px;
+    position: relative;
+    background-image: url(../images/cat.png);
+}
+.p_box h3{
+    position: absolute;
+    top: 400px;
+    left: 600px;
+}
+
+.psuedo_example li:first-child{
+    background: red;
+}
+.psuedo_example li:nth-child(3){
+    background: greenyellow;
+}
